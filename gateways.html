@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en" data-page="page02_three_gateways">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>StateFlow Three Main Gateways</title>
+  <meta name="description" content="Choose the pathway that matches your assessment reality. Demo prototype only." />
+  <meta name="robots" content="noindex, nofollow" />
+  <link rel="stylesheet" href="css/stateflow-gateway.css" />
+</head>
+<body>
+  <header class="sf-header" data-component="global_header">
+    <a class="sf-logo-wrap" href="index.html" aria-label="StateFlow Home">
+      <span class="sf-logo">StateFlow</span>
+      <span class="sf-logo-rule" aria-hidden="true"></span>
+      <span class="sf-subtitle">Language Assessment Intelligence</span>
+    </a>
+    <div class="sf-header-right">
+      <nav class="sf-nav" aria-label="Primary navigation">
+        <a class="active" href="gateways.html">Gateways</a>
+        <a href="#system" data-status="coming-soon">System</a>
+        <a href="#pilots" data-status="coming-soon">Pilots</a>
+        <a href="#partnership" data-status="coming-soon">Partnership</a>
+        <a href="#contact" data-status="coming-soon">Contact</a>
+      </nav>
+      <div class="sf-language-switcher" id="language-switcher" data-lang-current="en" data-lang-options="zh-TW,en,ja,ko,es,fr,de,id,th,vi,ar" aria-label="Language switcher">
+        <span>繁中</span><span class="divider">|</span><span class="active">EN</span><span class="divider">|</span><span>＋</span><span class="coming-soon">Coming soon</span>
+      </div>
+      <button class="sf-menu-button" data-menu-button aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+    <nav class="sf-mobile-nav" data-mobile-nav data-open="false" aria-label="Mobile navigation">
+      <a href="gateways.html">Gateways</a>
+      <a href="#system" data-status="coming-soon">System <span>Coming soon</span></a>
+      <a href="#pilots" data-status="coming-soon">Pilots <span>Coming soon</span></a>
+      <a href="#partnership" data-status="coming-soon">Partnership <span>Coming soon</span></a>
+      <a href="#contact" data-status="coming-soon">Contact <span>Coming soon</span></a>
+    </nav>
+  </header>
+
+  <div class="sf-demo-ribbon" role="note">Demo prototype. Public preview only. Interface shells and route pages are marked as Coming soon.</div>
+
+  <main class="sf-gateways-page" data-route="three_main_gateways" data-visual-mode="hybrid_gateway_interface">
+    <section class="sf-gateways-wrap" id="three-main-gateways">
+      <div class="sf-section-eyebrow">Three Gateways</div>
+      <h1 class="sf-section-title">Choose the pathway that matches your <span class="gold">assessment reality</span>.</h1>
+      <p class="sf-section-subtitle">StateFlow organises language assessment intelligence into three entry systems: global academic routes, Cambridge-aligned development pathways, and Taiwan institutional deployment.</p>
+
+      <div class="sf-gateway-card-grid" data-component="gateway_selector">
+        <article class="sf-entry-card sf-academic" id="academic-global" data-gateway-id="academic_global" data-slot-type="gateway_entry">
+          <div class="sf-card-icon" aria-hidden="true">□</div>
+          <h2>Academic Global Gateway</h2>
+          <p class="sf-card-routes">IELTS Academic / TOEFL iBT</p>
+          <div class="sf-card-rule" aria-hidden="true"></div>
+          <p class="sf-card-copy">For international study, research pathways, academic communication, and premium diagnostic review.</p>
+          <p class="sf-purpose"><span>●</span><span><strong>Diagnostic Purpose:</strong> Academic readiness and communication evidence beyond practice-test scores.</span></p>
+          <a class="sf-card-cta" href="#academic-global-route" data-route-id="ielts_academic,toefl_ibt_2026" data-status="coming-soon">Enter Academic Gateway <span class="sf-inline-status">Coming soon</span>&nbsp; →</a>
+          <span class="sf-tech-label">gateway_id: academic_global</span>
+        </article>
+
+        <article class="sf-entry-card sf-cambridge" id="cambridge-ecosystem" data-gateway-id="cambridge_ecosystem" data-slot-type="gateway_entry">
+          <div class="sf-card-icon" aria-hidden="true">⌬</div>
+          <h2>Cambridge Ecosystem Gateway</h2>
+          <p class="sf-card-routes">A2–C2 / CEFR / Young Learners / Adult Pathways</p>
+          <div class="sf-card-rule" aria-hidden="true"></div>
+          <p class="sf-card-copy">For long-term English development, age-appropriate progression, and school or programme-level diagnostic planning.</p>
+          <p class="sf-purpose"><span>●</span><span><strong>Diagnostic Purpose:</strong> Proficiency mapping and learning progression for Cambridge-aligned pathway candidates.</span></p>
+          <a class="sf-card-cta" href="#cambridge-pathway" data-route-id="cambridge_ecosystem" data-status="coming-soon">Explore Cambridge Pathway <span class="sf-inline-status">Coming soon</span>&nbsp; →</a>
+          <span class="sf-tech-label">gateway_id: cambridge_ecosystem</span>
+          <p class="sf-disclaimer">Not an official Cambridge partnership or official assessment service.</p>
+        </article>
+
+        <article class="sf-entry-card sf-taiwan" id="taiwan-institutional" data-gateway-id="taiwan_institutional" data-slot-type="gateway_entry">
+          <div class="sf-card-icon" aria-hidden="true">▥</div>
+          <h2>Taiwan Institutional Gateway</h2>
+          <p class="sf-card-routes">TOEIC L/R / GSAT English / GEPT Intermediate</p>
+          <div class="sf-card-rule" aria-hidden="true"></div>
+          <p class="sf-card-copy">For schools, enterprises, local institutions, workplace English, and Taiwan-based diagnostic deployment.</p>
+          <p class="sf-purpose"><span>●</span><span><strong>Diagnostic Purpose:</strong> Route-native evidence, report outputs, and repair direction aligned with local assessment needs.</span></p>
+          <a class="sf-card-cta" href="#institutional-route" data-route-id="toeic_lr,gsat_english,gept_intermediate" data-status="coming-soon">Enter Institutional Gateway <span class="sf-inline-status">Coming soon</span>&nbsp; →</a>
+          <span class="sf-tech-label">gateway_id: taiwan_institutional</span>
+        </article>
+      </div>
+
+      <aside class="sf-interface-strip" data-component="interface_slot_hint" data-interface-status="static_shell_now_live_replaceable_later">
+        <div class="sf-strip-intro"><strong>Each gateway connects to the full StateFlow system.</strong><br />Route pages, demo preview shells, mini pilot flows, and sample report outputs.</div>
+        <div class="sf-strip-item" data-slot-type="route_pages">Route Pages</div>
+        <div class="sf-strip-item" data-slot-type="demo_preview">Demo Preview</div>
+        <div class="sf-strip-item" data-slot-type="mini_pilot_preview">Mini Pilot</div>
+        <div class="sf-strip-item" data-slot-type="sample_report_preview">Sample Report</div>
+        <div class="sf-strip-status">static shell now / live replaceable later</div>
+      </aside>
+
+      <section class="sf-route-shell-grid" aria-label="Reserved gateway route shells">
+        <article id="academic-global-route" data-gateway-id="academic_global" data-slot-type="route_pages" data-status="coming-soon">
+          <span class="sf-panel-label">Academic Global Route</span>
+          <h2>IELTS / TOEFL route shell</h2>
+          <p>Reserved for demo route pages, sample report previews, and diagnostic flow.</p>
+          <span class="sf-panel-status">Coming soon</span>
+        </article>
+        <article id="cambridge-pathway" data-gateway-id="cambridge_ecosystem" data-slot-type="route_pages" data-status="coming-soon">
+          <span class="sf-panel-label">Cambridge Ecosystem Route</span>
+          <h2>A2–C2 pathway shell</h2>
+          <p>Reserved for Cambridge-aligned development pathways and progression mapping.</p>
+          <span class="sf-panel-status">Coming soon</span>
+        </article>
+        <article id="institutional-route" data-gateway-id="taiwan_institutional" data-slot-type="route_pages" data-status="coming-soon">
+          <span class="sf-panel-label">Taiwan Institutional Route</span>
+          <h2>TOEIC / GSAT / GEPT route shell</h2>
+          <p>Reserved for Taiwan-based institutions, workplace English, and local diagnostic deployment.</p>
+          <span class="sf-panel-status">Coming soon</span>
+        </article>
+      </section>
+
+      <section class="sf-coming-soon-grid" aria-label="Reserved demo sections">
+        <article id="system" data-slot-type="system_overview" data-status="coming-soon">
+          <span class="sf-panel-label">System</span>
+          <h2>System overview</h2>
+          <p>Reserved for the public explanation of StateFlow assessment intelligence.</p>
+          <span class="sf-panel-status">Coming soon</span>
+        </article>
+        <article id="pilots" data-slot-type="pilot_preview" data-status="coming-soon">
+          <span class="sf-panel-label">Pilots</span>
+          <h2>Pilot formats</h2>
+          <p>Reserved for demo pilot options, mini pilot flow, and sample report previews.</p>
+          <span class="sf-panel-status">Coming soon</span>
+        </article>
+        <article id="partnership" data-slot-type="partnership_preview" data-status="coming-soon">
+          <span class="sf-panel-label">Partnership</span>
+          <h2>Partnership route</h2>
+          <p>Reserved for schools, institutions, and strategic partners.</p>
+          <span class="sf-panel-status">Coming soon</span>
+        </article>
+        <article id="contact" data-slot-type="contact_preview" data-status="coming-soon">
+          <span class="sf-panel-label">Contact</span>
+          <h2>Contact entry</h2>
+          <p>Reserved for inquiry forms and pilot request routing.</p>
+          <span class="sf-panel-status">Coming soon</span>
+        </article>
+      </section>
+
+    </section>
+  </main>
+  <script src="js/navigation.js"></script>
+</body>
+</html>
