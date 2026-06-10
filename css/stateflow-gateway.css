@@ -1148,3 +1148,231 @@ html[data-page="page01_international_gateway"] .sf-home .sf-coming-soon-panel:fi
     margin-top: 42px;
   }
 }
+
+/* Mobile refinement layer v0.5
+Goal: reduce oversized mobile hero, remove bottom overlay, and make the phone layout easier to scan.
+Public-safe package only. No internal governance files included.
+*/
+@media (max-width: 760px) {
+  html, body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  html[data-page="page01_international_gateway"] .sf-header {
+    min-height: 84px;
+    padding: 14px 18px;
+  }
+
+  html[data-page="page01_international_gateway"] .sf-logo {
+    font-size: 36px;
+    line-height: .92;
+  }
+
+  html[data-page="page01_international_gateway"] .sf-subtitle {
+    margin-top: 6px;
+    font-size: 14px;
+    line-height: 1.12;
+    white-space: normal;
+  }
+
+  html[data-page="page01_international_gateway"] .sf-header-right {
+    gap: 10px;
+  }
+
+  html[data-page="page01_international_gateway"] .sf-language-switcher {
+    font-size: 14px;
+    gap: 6px;
+  }
+
+  html[data-page="page01_international_gateway"] .sf-menu-button {
+    width: 36px;
+    height: 30px;
+  }
+
+  html[data-page="page01_international_gateway"] .sf-menu-button span {
+    height: 2.5px;
+    margin: 6px 0;
+  }
+
+  html[data-page="page01_international_gateway"] .sf-mobile-nav {
+    margin-top: 12px;
+  }
+
+  html[data-page="page01_international_gateway"] .sf-demo-ribbon {
+    position: static;
+    display: block;
+    margin: 8px 16px 0;
+    max-width: none;
+    padding: 8px 12px;
+    border-radius: 12px;
+    background: rgba(4, 8, 17, .78);
+    font-size: 11.5px;
+    line-height: 1.35;
+    text-align: center;
+    box-shadow: none;
+  }
+
+  html[data-page="page01_international_gateway"] .sf-home {
+    min-height: auto;
+  }
+
+  html[data-page="page01_international_gateway"] .sf-home-content {
+    padding: 32px 20px 26px;
+  }
+
+  html[data-page="page01_international_gateway"] .sf-hero-copy {
+    transform: none;
+  }
+
+  html[data-page="page01_international_gateway"] .sf-eyebrow {
+    margin-bottom: 20px;
+    gap: 12px;
+    font-size: 13px;
+    line-height: 1.45;
+    letter-spacing: .16em;
+  }
+
+  html[data-page="page01_international_gateway"] .sf-eyebrow::after {
+    width: 58px;
+  }
+
+  html[data-page="page01_international_gateway"] .sf-hero-title {
+    max-width: 100%;
+    font-size: clamp(38px, 10.7vw, 46px);
+    line-height: 1.04;
+    letter-spacing: -.052em;
+  }
+
+  html[data-page="page01_international_gateway"] .sf-hero-subtitle {
+    margin-top: 22px;
+    font-size: 16px;
+    line-height: 1.52;
+  }
+
+  html[data-page="page01_international_gateway"] .sf-cta-row {
+    gap: 12px;
+    margin-top: 24px;
+  }
+
+  html[data-page="page01_international_gateway"] .sf-btn {
+    min-height: 56px;
+    padding: 0 18px;
+    font-size: 17px;
+  }
+
+  html[data-page="page01_international_gateway"] .sf-btn[data-status="coming-soon"] {
+    padding-right: 18px;
+  }
+
+  html[data-page="page01_international_gateway"] .sf-btn .sf-inline-status,
+  html[data-page="page01_international_gateway"] .sf-text-link .sf-inline-status {
+    position: static;
+    margin-left: 8px;
+    font-size: 9px;
+    background: rgba(4, 8, 17, .72);
+  }
+
+  html[data-page="page01_international_gateway"] .sf-text-link {
+    margin-top: 18px;
+    font-size: 16px;
+  }
+
+  html[data-page="page01_international_gateway"] .sf-gateway-visual {
+    min-height: 330px;
+    margin: 30px -20px 0;
+    overflow: hidden;
+    transform: none;
+  }
+
+  html[data-page="page01_international_gateway"] .sf-gateway-visual::before {
+    inset: 2% -14% -8% -14%;
+  }
+
+  html[data-page="page01_international_gateway"] .sf-gateway-visual::after {
+    left: -22%;
+    right: -22%;
+    bottom: 0;
+    height: 58%;
+    opacity: .74;
+  }
+
+  html[data-page="page01_international_gateway"] .sf-portal {
+    width: 72px;
+    height: 92px;
+    top: 41%;
+  }
+
+  html[data-page="page01_international_gateway"] .sf-portal::after {
+    width: 18px;
+    height: 150px;
+  }
+
+  html[data-page="page01_international_gateway"] .sf-line {
+    height: 4px;
+  }
+
+  html[data-page="page01_international_gateway"] .sf-visual-label {
+    font-size: 12px;
+    letter-spacing: .06em;
+  }
+
+  html[data-page="page01_international_gateway"] .sf-visual-label small {
+    font-size: 10px;
+  }
+
+  html[data-page="page01_international_gateway"] .sf-visual-label.control {
+    left: 8%;
+    top: 48%;
+  }
+
+  html[data-page="page01_international_gateway"] .sf-visual-label.evidence {
+    left: 50%;
+    top: 20%;
+  }
+
+  html[data-page="page01_international_gateway"] .sf-visual-label.infrastructure {
+    right: 6%;
+    top: 49%;
+  }
+
+  html[data-page="page01_international_gateway"] .sf-gateway-hints {
+    width: 100%;
+    margin: 18px auto 0;
+    gap: 14px;
+  }
+
+  html[data-page="page01_international_gateway"] .sf-gateway-hint .label {
+    font-size: 14px;
+    letter-spacing: .15em;
+  }
+
+  html[data-page="page01_international_gateway"] .sf-gateway-hint .routes {
+    font-size: 12px;
+  }
+
+  html[data-page="page01_international_gateway"] .sf-home .sf-coming-soon-panel,
+  html[data-page="page01_international_gateway"] .sf-home .sf-coming-soon-grid {
+    width: calc(100% - 32px);
+    margin: 20px auto;
+  }
+}
+
+@media (max-width: 390px) {
+  html[data-page="page01_international_gateway"] .sf-logo {
+    font-size: 32px;
+  }
+
+  html[data-page="page01_international_gateway"] .sf-subtitle {
+    font-size: 13px;
+  }
+
+  html[data-page="page01_international_gateway"] .sf-language-switcher {
+    font-size: 13px;
+  }
+
+  html[data-page="page01_international_gateway"] .sf-hero-title {
+    font-size: clamp(36px, 10.2vw, 41px);
+  }
+}
