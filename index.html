@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" data-page="page01_international_gateway" data-visual-lock="page01_v0.6">
+<html lang="en" data-page="page01_international_gateway" data-visual-lock="page01_v0.7_dynamic_flow">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -15,6 +15,51 @@
       <source media="(max-width: 767px)" srcset="assets/page01/page01-mobile-visual-target.png" />
       <img src="assets/page01/page01-desktop-visual-target.png" alt="" class="page01-lock-image" decoding="async" />
     </picture>
+
+    <div class="motion-layer" aria-hidden="true">
+      <svg class="flow-svg flow-svg-desktop" viewBox="0 0 100 56.28" preserveAspectRatio="none" focusable="false">
+        <defs>
+          <filter id="flowGlowDesktop" x="-40%" y="-40%" width="180%" height="180%">
+            <feGaussianBlur stdDeviation="0.55" result="blur" />
+            <feMerge>
+              <feMergeNode in="blur" />
+              <feMergeNode in="SourceGraphic" />
+            </feMerge>
+          </filter>
+        </defs>
+        <path class="flow-track flow-blue" d="M 39 56 C 45 49, 53 41, 63 34 C 66 32, 68 30, 69.2 27" />
+        <path class="flow-track flow-blue flow-secondary" d="M 33 55 C 44 48, 54 39, 65 30 C 67 28.5, 68.6 27.8, 69.2 27" />
+        <path class="flow-track flow-gold" d="M 70.3 56 C 70.2 49, 70.1 41, 70.0 34 C 70.0 31, 69.8 28.5, 69.7 26" />
+        <path class="flow-track flow-gold flow-secondary" d="M 66.8 56 C 68.5 48, 69.4 38, 69.7 26" />
+        <path class="flow-track flow-purple" d="M 96 56 C 87 49, 80 41, 73.5 33 C 71.6 30.5, 70.3 28.1, 69.7 26" />
+        <path class="flow-track flow-purple flow-secondary" d="M 88 56 C 81 48, 76 39, 71.8 31 C 70.8 29.2, 70.0 27.5, 69.7 26" />
+      </svg>
+
+      <svg class="flow-svg flow-svg-mobile" viewBox="0 0 100 216.18" preserveAspectRatio="none" focusable="false">
+        <defs>
+          <filter id="flowGlowMobile" x="-40%" y="-40%" width="180%" height="180%">
+            <feGaussianBlur stdDeviation="0.8" result="blur" />
+            <feMerge>
+              <feMergeNode in="blur" />
+              <feMergeNode in="SourceGraphic" />
+            </feMerge>
+          </filter>
+        </defs>
+        <path class="flow-track flow-blue" d="M 0 164 C 18 152, 34 140, 46 128 C 52 122, 57 117, 61 111" />
+        <path class="flow-track flow-blue flow-secondary" d="M 6 172 C 25 158, 42 143, 56 124 C 59 119, 61 115, 62 111" />
+        <path class="flow-track flow-gold" d="M 50 190 C 54 174, 59 157, 62 138 C 64 126, 64 117, 63 109" />
+        <path class="flow-track flow-gold flow-secondary" d="M 58 190 C 61 170, 63 147, 63 109" />
+        <path class="flow-track flow-purple" d="M 100 166 C 83 153, 74 139, 68 126 C 65.5 120, 64 114, 63 109" />
+        <path class="flow-track flow-purple flow-secondary" d="M 95 176 C 80 158, 70 139, 64 109" />
+      </svg>
+
+      <div class="gateway-pulse gateway-pulse-desktop"></div>
+      <div class="gateway-pulse gateway-pulse-mobile"></div>
+      <div class="flow-particle particle-a"></div>
+      <div class="flow-particle particle-b"></div>
+      <div class="flow-particle particle-c"></div>
+    </div>
+
 
     <h1 class="sr-only">StateFlow International Gateway</h1>
     <p class="sr-only">Where language becomes control, evidence becomes trust, and communication becomes infrastructure.</p>

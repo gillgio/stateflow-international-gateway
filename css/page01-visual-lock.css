@@ -113,3 +113,162 @@ body.page01-visual-lock {
   .gateway-cambridge { left: 36.0%; top: 86.2%; width: 25.0%; height: 6.2%; }
   .gateway-taiwan { left: 73.0%; top: 86.2%; width: 24.0%; height: 6.2%; }
 }
+
+/* Page 01 Dynamic Flow Test v0.7
+   Principle: fixed approved visual target image + subtle animated flow layer only.
+   Text, CTA, nav, and gateway labels remain stable because they are part of the locked base image.
+*/
+
+.motion-layer {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+  overflow: hidden;
+  mix-blend-mode: screen;
+}
+
+.flow-svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.flow-track {
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 2.2 8.5;
+  stroke-dashoffset: 18;
+  opacity: 0.58;
+  animation: stateflow-stream 9.6s linear infinite;
+  vector-effect: non-scaling-stroke;
+}
+
+.flow-secondary {
+  opacity: 0.34;
+  stroke-dasharray: 1.2 11;
+  animation-duration: 13s;
+  animation-delay: -5s;
+}
+
+.flow-blue {
+  stroke: rgba(76, 215, 255, 0.88);
+  stroke-width: 0.36;
+  filter: url(#flowGlowDesktop);
+}
+
+.flow-gold {
+  stroke: rgba(255, 204, 101, 0.9);
+  stroke-width: 0.48;
+  filter: url(#flowGlowDesktop);
+  animation-duration: 11.5s;
+}
+
+.flow-purple {
+  stroke: rgba(190, 106, 255, 0.82);
+  stroke-width: 0.38;
+  filter: url(#flowGlowDesktop);
+  animation-duration: 12.4s;
+  animation-delay: -2.5s;
+}
+
+.gateway-pulse {
+  position: absolute;
+  border-radius: 999px;
+  background:
+    radial-gradient(circle, rgba(255, 229, 152, 0.35) 0%, rgba(255, 193, 88, 0.18) 28%, rgba(255, 193, 88, 0.04) 56%, rgba(255, 193, 88, 0) 72%);
+  filter: blur(7px);
+  opacity: 0.42;
+  animation: gateway-breathe 5.8s ease-in-out infinite;
+}
+
+.flow-particle {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-radius: 999px;
+  background: rgba(255, 221, 144, 0.9);
+  box-shadow: 0 0 12px rgba(255, 204, 101, 0.7), 0 0 22px rgba(255, 204, 101, 0.25);
+  opacity: 0.42;
+  animation: particle-drift 10s ease-in-out infinite;
+}
+
+.particle-a { left: 61.8%; top: 29.0%; animation-delay: -1.5s; }
+.particle-b { left: 76.5%; top: 25.0%; animation-delay: -5.8s; transform: scale(0.75); }
+.particle-c { left: 53.5%; top: 34.0%; animation-delay: -8.2s; transform: scale(0.6); }
+
+@keyframes stateflow-stream {
+  0% { stroke-dashoffset: 21; opacity: 0.18; }
+  18% { opacity: 0.62; }
+  70% { opacity: 0.54; }
+  100% { stroke-dashoffset: 0; opacity: 0.18; }
+}
+
+@keyframes gateway-breathe {
+  0%, 100% { transform: scale(0.96); opacity: 0.28; }
+  48% { transform: scale(1.08); opacity: 0.58; }
+}
+
+@keyframes particle-drift {
+  0%, 100% { opacity: 0.14; transform: translate3d(0, 0, 0) scale(0.8); }
+  35% { opacity: 0.48; }
+  65% { opacity: 0.28; transform: translate3d(18px, -14px, 0) scale(1.05); }
+}
+
+@media (min-width: 768px) {
+  .flow-svg-mobile,
+  .gateway-pulse-mobile { display: none; }
+
+  .gateway-pulse-desktop {
+    left: 63.5%;
+    top: 31.0%;
+    width: 9.0%;
+    height: 19.0%;
+  }
+}
+
+@media (max-width: 767px) {
+  .flow-svg-desktop,
+  .gateway-pulse-desktop { display: none; }
+
+  .flow-blue {
+    stroke-width: 0.66;
+    filter: url(#flowGlowMobile);
+  }
+
+  .flow-gold {
+    stroke-width: 0.82;
+    filter: url(#flowGlowMobile);
+  }
+
+  .flow-purple {
+    stroke-width: 0.68;
+    filter: url(#flowGlowMobile);
+  }
+
+  .gateway-pulse-mobile {
+    left: 43.0%;
+    top: 53.5%;
+    width: 26.0%;
+    height: 11.5%;
+    filter: blur(8px);
+  }
+
+  .particle-a { left: 49.5%; top: 55.5%; }
+  .particle-b { left: 74.0%; top: 54.8%; }
+  .particle-c { left: 24.0%; top: 58.2%; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .flow-track,
+  .gateway-pulse,
+  .flow-particle {
+    animation: none;
+  }
+
+  .flow-track { opacity: 0.28; }
+  .gateway-pulse { opacity: 0.24; }
+  .flow-particle { display: none; }
+}

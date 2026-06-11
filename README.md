@@ -1,19 +1,15 @@
-# StateFlow International Gateway Public Package v0.6
+# StateFlow International Gateway — Public Safe v0.7 Dynamic Flow Test
 
-Public-safe package for GitHub Pages.
+This is the public-safe Page 01 dynamic flow test package.
 
-## Scope
-- Page 01 visual fidelity correction only.
-- Page 02 remains unchanged from the previous public package.
-- No internal governance files, references, metadata, or layout boards are included.
+Scope:
+- Page 01 visual target remains locked.
+- Desktop and mobile approved visual target images are used as fixed base images.
+- A subtle animated flow layer is added above the base image.
+- Page 02 is unchanged.
+- Internal governance documents, reference docs, metadata, and non-public files are not included.
 
-## Page 01
-Page 01 uses approved desktop and mobile visual target images as the visual lock background assets.
-Transparent hotspots are layered for navigation and CTA areas.
-
-## Deploy
-Upload the contents of this folder to the repository root:
-
+Upload root files/folders to GitHub Pages:
 - index.html
 - gateways.html
 - css/
@@ -21,9 +17,7 @@ Upload the contents of this folder to the repository root:
 - assets/
 - README.md
 
-Do not upload the outer folder itself.
-所有保留空殼的按鈕，都加上 Coming soon 標示。
-手機版已補上 mobile nav，漢堡選單可以開合。
-語言切換器已改成：繁中｜EN｜＋ Coming soon。
-頁面已加入 demo 提示：這是 public preview / demo prototype。
-尚未加入 .nojekyll （前者作用是避免 GitHub Pages 用 Jekyll 處理靜態頁）。
+Optional:
+- .nojekyll
+
+Do not upload internal docs, references, metadata, or original handoff packages to public GitHub.
