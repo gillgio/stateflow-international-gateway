@@ -26,4 +26,4 @@ Do not upload the outer folder itself.
 手機版已補上 mobile nav，漢堡選單可以開合。
 語言切換器已改成：繁中｜EN｜＋ Coming soon。
 頁面已加入 demo 提示：這是 public preview / demo prototype。
-尚未加入 .nojekyll （避免 GitHub Pages 用 Jekyll 處理靜態頁）。
+尚未加入 .nojekyll （前者作用是避免 GitHub Pages 用 Jekyll 處理靜態頁）。
